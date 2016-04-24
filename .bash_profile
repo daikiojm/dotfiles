@@ -10,7 +10,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 export LS_COLORS="${LS_COLORS}:di=01;36"
 
 ##--------------------
-# export
+# alias 
 ##--------------------
 # 尊師スタイルのon/off
 alias onkeyboard="sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/"
