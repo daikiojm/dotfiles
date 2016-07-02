@@ -3,6 +3,7 @@ let g:hybrid_use_iTerm_colors = 1
 set background=dark
 colorscheme hybrid
 syntax on
+syntax enable
 
 "ステータスライン
 set statusline=%F%m%r%h%w\%=[TYPE=%Y]\[FORMAT=%{&ff}]\[ENC=%{&fileencoding}]\[LOW=%l/%L]
@@ -20,6 +21,11 @@ set cursorcolumn
 "タブ、空白、改行の可視化
 set list
 set listchars=tab:>.,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
+
+" タブを表示するときの幅
+set tabstop=4
+" タブを挿入するときの幅
+set shiftwidth=4
 
 "カーソル位置表示
 set ruler
@@ -49,6 +55,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ng/vim-airline'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'vim-airline/vim-airline-themes'
+NeoBundle 'mattn/emmet-vim'
  
 " NeoBundle設定の終了
 call neobundle#end()
@@ -59,4 +66,7 @@ filetype plugin indent on
 let g:airline_powerline_fonts = 1
 set laststatus=2
 
-
+"------------------------------------
+" emmet-vim
+"------------------------------------
+"let g:user_emmet_leader_key='<c-e>'
