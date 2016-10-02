@@ -2,8 +2,10 @@
 let g:hybrid_use_iTerm_colors = 1
 set background=dark
 colorscheme hybrid
-syntax on
 syntax enable
+
+" Vi互換をオフ
+set nocompatible
 
 "ステータスライン
 set statusline=%F%m%r%h%w\%=[TYPE=%Y]\[FORMAT=%{&ff}]\[ENC=%{&fileencoding}]\[LOW=%l/%L]
