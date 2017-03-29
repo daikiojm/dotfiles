@@ -50,4 +50,9 @@ if [ -f /Applications/MacVim.app/Contents/MacOS/Vim ]; then
   alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 fi
 
+##--------------------
+# カラースキーム
+##--------------------
+eval $(gdircolors ~/.dircolors-solarized)
+
 test -r /sw/bin/init.sh && . /sw/bin/init.sh

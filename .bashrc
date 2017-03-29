@@ -7,9 +7,9 @@ export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 ##--------------------
 # .dir_colorsの反映
 ##--------------------
- if type -P dircolors >/dev/null ; then
-   eval `dircolors $HOME/.dir_colors`
- fi
+# if type -P dircolors >/dev/null ; then
+#   eval `dircolors $HOME/.dir_colors`
+# fi
 
 ##--------------------
 # 色系の設定
