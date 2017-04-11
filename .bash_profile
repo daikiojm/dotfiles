@@ -37,7 +37,10 @@ git_branch() {
 ##--------------------
 #PS1='——\n\[\033[36m\]\u \[\033[0m\]\[\033[32m\]\w \[\033[0m\]\[\033[34m\]\t \[\033[31m\]:\[\033[35m\]$(git_branch)\[\033[0m\] $ '
 #export PS1="[\[\e[1;34m\]\u\[\e[00m\]@\h:\W]\$ "
+
+# 現在安定版
 PS1='\[\033[36m\]\u \[\033[0m\]\[\033[32m\]\w \[\033[0m\]\[\033[34m\]\t \[\033[31m\]:\[\033[35m\]$(git_branch)\[\033[0m\] $ '
+
 # ↓ユーザー名表示しない 一時的
 # PS1=' \[\033[0m\]\[\033[32m\]\w \[\033[0m\]\[\033[34m\]\t \[\033[31m\]:\[\033[35m\]$(git_branch)\[\033[0m\] $ '
 
@@ -54,5 +57,12 @@ fi
 # カラースキーム
 ##--------------------
 eval $(gdircolors ~/.dircolors-solarized)
+
+##--------------------
+# Bash completion
+##--------------------
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
 
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
