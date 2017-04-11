@@ -18,6 +18,7 @@ alias offkeyboard="sudo kextunload /System/Library/Extensions/AppleUSBTopCase.ke
 # ls
 alias ls="ls --color"
 
+
 ##--------------------
 # .bashrcの読み込み
 ##--------------------
@@ -55,8 +56,11 @@ fi
 
 ##--------------------
 # カラースキーム
+# 参考
+# http://qiita.com/Humangas/items/848f0318dfc3c6f5b8e2
 ##--------------------
 eval $(gdircolors ~/.dircolors-solarized)
+
 
 ##--------------------
 # Bash completion
