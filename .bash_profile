@@ -16,7 +16,11 @@ export LS_COLORS="${LS_COLORS}:di=01;36"
 alias onkeyboard="sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/"
 alias offkeyboard="sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/"
 # ls
-alias ls="ls --color"
+# alias ls="ls --color"
+alias ls="ls -G"
+
+# cd Documents
+alias d="cd /Users/$USER/Documents/"
 
 ##--------------------
 # .bashrcの読み込み
