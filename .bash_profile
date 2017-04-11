@@ -17,6 +17,8 @@ alias onkeyboard="sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/
 alias offkeyboard="sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/"
 # ls
 alias ls="ls --color"
+# cd Documents
+alias d="cd /Users/$USER/Documents/"
 
 
 ##--------------------
