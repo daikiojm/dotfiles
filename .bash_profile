@@ -26,6 +26,11 @@ alias aws-personal="export AWS_DEFAULT_PROFILE=personal"
 
 #cheetsheet shortcut
 alias che="atom ~/Dropbox/shortcut/cheatsheet"
+# alias ls="ls --color"
+alias ls="ls -G"
+
+# cd Documents
+alias d="cd /Users/$USER/Documents/"
 
 ##--------------------
 # .bashrcの読み込み
