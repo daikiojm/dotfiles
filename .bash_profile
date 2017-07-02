@@ -17,6 +17,7 @@ alias onkeyboard="sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/
 alias offkeyboard="sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/"
 # ls
 alias ls="ls --color"
+
 # aws credentials chenge
 alias aws-default="export AWS_DEFAULT_PROFILE=default"
 alias aws-vsv1="export AWS_DEFAULT_PROFILE=vsv1"
@@ -69,11 +70,15 @@ fi
 
 ##--------------------
 # カラースキーム
+# 参考
+# http://qiita.com/Humangas/items/848f0318dfc3c6f5b8e2
 ##--------------------
 eval $(gdircolors ~/.dircolors-solarized)
 
+
 ##--------------------
 # Bash completion
+# $ brew install bash-completion
 ##--------------------
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
