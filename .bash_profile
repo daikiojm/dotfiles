@@ -17,9 +17,21 @@ alias onkeyboard="sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/
 alias offkeyboard="sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/"
 # ls
 alias ls="ls --color"
+
+# aws credentials chenge
+alias aws-default="export AWS_DEFAULT_PROFILE=default"
+alias aws-vsv1="export AWS_DEFAULT_PROFILE=vsv1"
+alias aws-vsv2="export AWS_DEFAULT_PROFILE=vsv2"
+alias aws-infra="export AWS_DEFAULT_PROFILE=infra"
+alias aws-personal="export AWS_DEFAULT_PROFILE=personal"
+
+#cheetsheet shortcut
+alias che="atom ~/Dropbox/shortcut/cheatsheet"
+alias ls="ls --color"
+#alias ls="ls -G"
+
 # cd Documents
 alias d="cd /Users/$USER/Documents/"
-
 
 ##--------------------
 # .bashrcの読み込み
