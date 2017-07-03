@@ -15,8 +15,6 @@ export LS_COLORS="${LS_COLORS}:di=01;36"
 # 尊師スタイルのon/off
 alias onkeyboard="sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/"
 alias offkeyboard="sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/"
-# ls
-alias ls="ls --color"
 
 # aws credentials chenge
 alias aws-default="export AWS_DEFAULT_PROFILE=default"
@@ -27,8 +25,10 @@ alias aws-personal="export AWS_DEFAULT_PROFILE=personal"
 
 #cheetsheet shortcut
 alias che="atom ~/Dropbox/shortcut/cheatsheet"
-alias ls="ls --color"
-#alias ls="ls -G"
+
+# ls
+#alias ls="ls --color"
+alias ls="ls -G"
 
 # cd Documents
 alias d="cd /Users/$USER/Documents/"
