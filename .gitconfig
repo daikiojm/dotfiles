@@ -1,0 +1,10 @@
+[user]
+name = daikiojm
+email = daiking.ca2@gmail.com
+
+[credential]
+helper = osxkeychain
+
+[alias]
+tag = tag -s
+st = status
