@@ -9,6 +9,11 @@ export NODE_PATH=/usr/local/lib/node_modules
 # lsのカラースキーム
 export LS_COLORS="${LS_COLORS}:di=01;36"
 
+# pyenv
+export PYENV_ROOT="${HOME}/.pyenv"
+export PATH="${PYENV_ROOT}/bin:$PATH"
+eval "$(pyenv init -)"
+
 ##--------------------
 # alias
 ##--------------------
