@@ -18,6 +18,9 @@ eval "$(pyenv init -)"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+# soracom-cli
+eval "$(soracom completion)"
+
 ##--------------------
 # alias
 ##--------------------
