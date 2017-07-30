@@ -6,8 +6,6 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 # node_modules
 export NODE_PATH=/usr/local/lib/node_modules
-# lsのカラースキーム
-export LS_COLORS="${LS_COLORS}:di=01;36"
 
 # pyenv
 export PYENV_ROOT="${HOME}/.pyenv"
@@ -38,9 +36,14 @@ alias aws-personal="export AWS_DEFAULT_PROFILE=personal"
 #cheetsheet shortcut
 alias che="atom ~/Dropbox/shortcut/cheatsheet"
 
-# ls
-#alias ls="ls --color"
-alias ls="ls -G"
+##--------------------
+# lsのカラースキーム
+# 参考
+# http://qiita.com/HeRo/items/363b2aa18e7f225a8069#macos%E3%81%A7%E3%81%AEls%E3%81%AE%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A8%AD%E5%AE%9A
+##--------------------
+eval `/usr/local/opt/coreutils/libexec/gnubin/dircolors ~/dircolors-solarized/dircolors.ansi-dark`
+alias ls='gls --color=auto -F -al'
+
 
 # cd Documents
 alias d="cd /Users/$USER/Documents/"
@@ -80,12 +83,6 @@ if [ -f /Applications/MacVim.app/Contents/MacOS/Vim ]; then
   alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 fi
 
-##--------------------
-# カラースキーム
-# 参考
-# http://qiita.com/Humangas/items/848f0318dfc3c6f5b8e2
-##--------------------
-eval $(gdircolors ~/.dircolors-solarized)
 
 
 ##--------------------

@@ -1,8 +1,6 @@
-"iTerm関係
-let g:hybrid_use_iTerm_colors = 1
-set background=dark
-"colorscheme hybrid
-"syntax enable
+"カラースキーマ関連
+syntax enable
+set background=dark    "または light
 
 " Vi互換をオフ
 set nocompatible
@@ -61,6 +59,9 @@ NeoBundle 'mattn/emmet-vim'
 
 " Hybiridカラースキーム
 NeoBundle 'w0ng/vim-hybrid'
+
+" solarizedカラースキーム
+NeoBundle 'altercation/vim-colors-solarized'
 
 " NeoBundle設定の終了
 call neobundle#end()
