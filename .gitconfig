@@ -1,10 +1,13 @@
 [user]
-name = daikiojm
-email = daiking.ca2@gmail.com
+	name = daikiojm
+	email = daiking.ca2@gmail.com
 
 [credential]
-helper = osxkeychain
+	helper = osxkeychain
 
 [alias]
-tag = tag -s
-st = status
+	tag = tag -s
+	st = status
+[ghq]
+	root = /Users/d_ojima/src
+	root = /Users/d_ojima/go/src
