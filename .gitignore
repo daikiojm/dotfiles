@@ -1,4 +1,5 @@
 .mono
+.DS_Store
 hub
 fishd.*
 fish_history
