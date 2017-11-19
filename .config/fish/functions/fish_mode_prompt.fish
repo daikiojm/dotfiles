@@ -1,0 +1,1 @@
+/Users/d_ojima/.config/fisherman/bobthefish/fish_mode_prompt.fish
