@@ -11,3 +11,8 @@
 [ghq]
 	root = /Users/d_ojima/src
 	root = /Users/d_ojima/go/src
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
