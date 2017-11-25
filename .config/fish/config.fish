@@ -16,3 +16,6 @@ alias l="ls -al"
 
 # カレントリポジトリのGitHubを開く
 alias gh="hub browse"
+
+# mongoDBの起動
+alias mongodb="sudo mongod --dbpath /var/lib/mongodb --logpath /var/log/mongodb.log"
