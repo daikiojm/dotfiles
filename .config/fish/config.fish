@@ -19,3 +19,13 @@ alias gh="hub browse"
 
 # mongoDBの起動
 alias mongodb="sudo mongod --dbpath /var/lib/mongodb --logpath /var/log/mongodb.log"
+
+####################
+# Path
+####################
+
+set -U NODE_PATH $HOME/.nodebrw/current/lib/node_modules
+
+set -U fish_user_paths $HOME/.nodebrew/current/bin $fish_user_paths
+
+set -U fish_user_paths $HOME/.npm-global/bin $fish_user_paths
