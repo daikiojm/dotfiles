@@ -10,6 +10,5 @@ fisherman/getopts
 decors/fish-ghq
 fisherman/last_job_id
 decors/fish-lscolors
-oh-my-fish/plugin-peco
 oh-my-fish/plugin-tmux
 fisherman/z

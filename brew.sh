@@ -17,10 +17,11 @@ echo "=== Install Homebrew packages"
 brew install tree
 brew install curl
 brew install wget
-brew install fzf
 brew install git
 brew install nodebrew
 brew install nodenv
+brew install ghq
+brew install fzf
 
 brew install caskroom/cask/brew-cask
 brew cask install google-chrome
