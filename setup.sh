@@ -5,6 +5,7 @@ cp -R .gitconfig ~/
 cp -R .editorconfig ~/
 cp -R .tmux.conf ~/
 cp -R .vimrc ~/
+cp -R .config/ ~/.config
 
 # Homebrew
 echo "=== Install Homebrew"
