@@ -20,8 +20,10 @@ brew install wget
 brew install git
 brew install nodebrew
 brew install nodenv
+brew install tmux
 brew install ghq
 brew install fzf
+brew install hub
 
 brew install caskroom/cask/brew-cask
 brew cask install google-chrome
