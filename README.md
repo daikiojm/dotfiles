@@ -28,7 +28,21 @@ Test connection to github.
 $ ssh -T git@github.com
 ```
 
-# Font
+# Others
+
+## Terminal
+
+### Theme
+
+Download Solarized from GitHub.
+
+```
+$ git clone https://github.com/tomislav/osx-terminal.app-colors-solarized solarized.git
+```
+
+and Import into Terminal.app preferences.
+
+### Font
 
 Install necessary fonts for power line theme.
 
@@ -38,7 +52,7 @@ $ cd fonts
 $ ./install.sh
 ```
 
-# Others
+and Set `Meslo LG S Regular for Powerline 13 pt.` into Terminal.app preferences.
 
 ## Karabiner
 
