@@ -1,40 +1,40 @@
-"カラースキーマ関連
+" Color Schema
 syntax enable
 set background=dark    "または light
 
-" Vi互換をオフ
+" Turn off Vi compatibility
 set nocompatible
 
-"ステータスライン
+" Status Line
 set statusline=%F%m%r%h%w\%=[TYPE=%Y]\[FORMAT=%{&ff}]\[ENC=%{&fileencoding}]\[LOW=%l/%L]
 
-"内容が変更されたら自動的に再読み込み
+" Automatically reload when the contents change
 set autoread
 
-" 行番号を表示
+" Show line number
 set number
 
-"カーソルラインを表示する
+" Display cursor line
 set cursorline
 set cursorcolumn
 
-"タブ、空白、改行の可視化
+" Visualization of tabs, blanks, line breaks
 set list
 set listchars=tab:>.,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
 
-" タブを表示するときの幅
+" Width when tab is displayed
 set tabstop=4
-" タブを挿入するときの幅
+" Width when tab is inserted
 set shiftwidth=4
 
-"カーソル位置表示
+" Cursor position indication
 set ruler
 
-"カッコの対応関係を一瞬表示
+" Display parentheses correspondence for a moment
 set showmatch
 
 
-" sthにNeoBundleのパスを追加する
+" Add NeoBundle's path to sth
 if has('vim_starting')
   if &compatible
     set nocompatible
@@ -42,31 +42,30 @@ if has('vim_starting')
   set runtimepath+=/Users/d_ojima/.vim/bundle/neobundle.vim/
 endif
 
-" NeoBundle設定の開始
+" Start NeoBundle setting
 " call neobundle#begin(expand('/Users/d_ojima/vim/bundle'))
 call neobundle#begin(expand('~/.vim/bundle/'))
 
-" NeoBundleのバージョンをNeoBundle自身で管理する
+" Manage NeoBundle version with NeoBundle itself
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" インストールしたいプラグインを記述
-" 下記は unite.vimというプラグインをインストールする例
+" Describe the plugin you want to install
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ng/vim-airline'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'mattn/emmet-vim'
 
-" Hybiridカラースキーム
+" Hybirid Color Schema
 NeoBundle 'w0ng/vim-hybrid'
 
-" solarizedカラースキーム
+" solarized Color Schema
 NeoBundle 'altercation/vim-colors-solarized'
 
-" NeoBundle設定の終了
+" NeoBundle setting end
 call neobundle#end()
 
-" ファイルタイプ別のプラグイン/インデントを有効にする
+" Enable plugin / indentation by file type
 filetype plugin indent on
 
 let g:airline_powerline_fonts = 1
@@ -78,6 +77,6 @@ set laststatus=2
 "let g:user_emmet_leader_key='<c-e>'
 
 
-" 最下部に記述した
+" Described at the bottom ...
 colorscheme hybrid
 syntax on

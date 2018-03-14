@@ -1,1 +1,0 @@
-/Users/d_ojima/.config/fisherman/bobthefish/fish_title.fish

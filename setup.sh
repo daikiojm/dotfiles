@@ -1,9 +1,21 @@
 #!/bin/sh
-cd $(dirname $0)
-for dotfile in .?*
-do
-    if [ $dotfile != '..' ] && [ $dotfile != '.git' ]
-    then
-        ln -Fis "$PWD/$dotfile" $HOME
-    fi
-done
+
+# copy dotfiles
+cp -R .gitconfig ~/
+cp -R .editorconfig ~/
+cp -R .tmux.conf ~/
+cp -R .vimrc ~/
+
+# Homebrew
+echo "=== Install Homebrew"
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+./brew.sh
+
+brew doctor
+
+# nodebrew
+echo "=== Install Nodebrew"
+nodebrew install-binary latest
+nodebrew use latest
