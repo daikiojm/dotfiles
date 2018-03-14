@@ -43,4 +43,21 @@ $ ./install.sh
 ## Karabiner
 
 Download from https://pqrs.org/osx/karabiner and Install.
- 
+
+## Visual Studio Code 
+
+Backup extended package list.
+
+```
+$ cp $HOME/Library/Application\ Support/Code/User/keybindings.json ./vscode/keybindings.json 
+$ cp $HOME/Library/Application\ Support/Code/User/settings.json ./vscode/settings.json
+$ code --list-extensions > ./vscode/extensions
+``` 
+
+Restoring extended package list.
+
+```
+$ cp ./vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
+$ cp ./vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json 
+$ ./vscode/installExtensions.sh
+```
