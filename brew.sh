@@ -20,6 +20,7 @@ brew install wget
 brew install git
 brew install nodebrew
 brew install nodenv
+brew install pyenv
 brew install tmux
 brew install ghq
 brew install fzf
