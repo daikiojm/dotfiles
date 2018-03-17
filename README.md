@@ -11,13 +11,17 @@ $ ./setup.sh
 Create ssh keys with RSA.
 
 ```
-$ ssh-keygen -t rsa
+$ mkdir ~/.ssh
+$ cd ~/.ssh
+$ ssh-keygen -t rsa -C "daiking.ca2@gmail.com" -f "daikiojm_rsa"
+$ chmod 600 daikiojm_rsa
+$ ssh-add ~/.ssh/daikiojm_rsa
 ```
 
 Copy to clipboard.
 
 ```
-$ cat ~/.ssh/id_rsa.pub | pbcopy
+$ cat ~/.ssh/daikiojm_rsa.pub | pbcopy
 ```
 
 Register this on https://github.com/settings/ssh .
