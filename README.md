@@ -37,7 +37,7 @@ $ ssh -T git@github.com
 Download Solarized from GitHub.
 
 ```
-$ git clone https://github.com/tomislav/osx-terminal.app-colors-solarized solarized.git
+$ git clone https://github.com/tomislav/osx-terminal.app-colors-solarized.git
 ```
 
 and Import into Terminal.app preferences.
