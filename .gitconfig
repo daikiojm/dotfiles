@@ -7,8 +7,8 @@
 	tag = tag -s
 	st = status
 [ghq]
-	root = /Users/d_ojima/src
-	root = /Users/d_ojima/go/src
+	root = ~/src
+	root = ~/go/src
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
