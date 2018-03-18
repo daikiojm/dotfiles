@@ -17,6 +17,9 @@ set -x fish_greeting ""
 # GPG
 set -x GPG_TTY (tty)
 
+# Python
+. (pyenv init - | psub)
+
 
 ####################
 # alias
