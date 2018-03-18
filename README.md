@@ -32,6 +32,40 @@ Test connection to github.
 $ ssh -T git@github.com
 ```
 
+# GPG Key Gen & Register to GitHub
+
+Create a signature with GnuPG.
+
+```
+$ gpg --full-generate-key
+```
+
+Check key.
+
+```
+$ gpg --list-secret-keys
+```
+
+Register GPG public key in GitHub.
+
+Check ID.
+
+```
+$ gpg --list-secret-keys --keyid-format LONG
+```
+
+Confirm key contents.
+
+```
+$ gpg --armor --export <ID> | pbcopy
+```
+
+Copy between a BEGIN and a END.
+
+Register this on https://github.com/settings/gpg/new .
+
+refs: https://4to.pics/article/post/92
+
 # Others
 
 ## Terminal
