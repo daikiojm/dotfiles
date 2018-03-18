@@ -25,6 +25,9 @@ set -x GPG_TTY (tty)
 # alias
 ####################
 
+# use Neovim
+alias vim="nvim"
+
 # clear terminal
 alias c="clear"
 
