@@ -11,10 +11,6 @@ set -x LANG "ja_JP.UTF-8"
 # set -U fish_user_paths $HOME/.nodebrew/current/bin $fish_user_paths
 # set -U fish_user_paths $HOME/.nodebrew/current/lib/node_modules $fish_user_paths
 
-# Python
-set -x PATH $HOME/.pyenv/bin $PATH
-. (pyenv init - | psub)
-
 # Fish
 set -x fish_greeting ""
 
