@@ -19,6 +19,7 @@ brew install curl
 brew install wget
 brew install git
 brew install git-flow
+brew install gibo
 brew install nodebrew
 brew install nodenv
 brew install gnupg
