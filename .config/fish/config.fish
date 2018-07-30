@@ -31,6 +31,15 @@ alias b="bash"
 # shortcut Documents
 alias d="cd ~/Documents/"
 
+# for docker command
+alias dc="docker-compose"
+alias dcu="docker-compose up -d"
+alias dcd="docker-compose down"
+alias dp="docker ps"
+
+# exit command 
+alias e="exit"
+
 # for git command
 alias g="git"
 alias ga="git add"
@@ -48,7 +57,6 @@ alias vim="nvim"
 
 # clear terminal
 alias c="clear"
-
 
 # shortcut tmux
 alias t="tmux"
