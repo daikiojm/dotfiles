@@ -25,14 +25,27 @@ set -x GPG_TTY (tty)
 # alias
 ####################
 
+# startup bash
+alias b="bash"
+
+# shortcut Documents
+alias d="cd ~/Documents/"
+
+# for git command
+alias g="git"
+alias ga="git add"
+alias gc="git commit"
+alias gl="git log"
+alias gp="git pull"
+alias gs="git stash"
+alias gm="git merge"
+
 # use Neovim
 alias vim="nvim"
 
 # clear terminal
 alias c="clear"
 
-# shortcut Documents
-alias d="cd ~/Documents/"
 
 # shortcut tmux
 alias t="tmux"
