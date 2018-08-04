@@ -20,6 +20,9 @@ set -x GPG_TTY (tty)
 # Python
 . (pyenv init - | psub)
 
+# Go
+set -x GOPATH $HOME
+
 
 ####################
 # alias
