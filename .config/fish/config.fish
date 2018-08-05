@@ -28,6 +28,10 @@ set -x GOPATH $HOME
 # alias
 ####################
 
+# for homebrew with pyenv
+# @see: https://qiita.com/takc923/items/45386905f70fde9af0e7
+alias brew="env PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
+
 # startup bash
 alias b="bash"
 
