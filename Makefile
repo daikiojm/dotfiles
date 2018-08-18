@@ -18,8 +18,9 @@ symlink:
 	ln -sf $(.)/.gnupg/gpg.conf $(HOME)/.gnupg/gpg.conf
 	ln -sf $(.)/.config/fish/config.fish $(HOME)/.config/fish/config.fish
 	ln -sf $(.)/.config/fish/fishfile $(HOME)/.config/fish/fishfile
-	ln -sf $(.)/.config/karabiner $(HOME)/.config/karabiner
-	ln -sf $(.)/.config/powerline $(HOME)/.config/powerline
+	[ -e $(HOME)/.config/karabiner/assets ] || ln -sf $(.)/.config/karabiner/assets $(HOME)/.config/karabiner/assets
+	ln -sf $(.)/.config/karabiner/karabiner.json $(HOME)/.config/karabiner/karabiner.json
+	[ -e $(HOME)/.config/powerline ] || ln -sf $(.)/.config/powerline $(HOME)/.config/powerline
 
 fish:
 	bash lib/fish.sh
