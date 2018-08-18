@@ -7,12 +7,15 @@ set -x PATH $PATH ~/.nodebrew/current/bin
 
 set -x LANG "ja_JP.UTF-8"
 
-# set -U NODE_PATH $HOME/.nodebrew/current/lib/node_modules
-# set -U fish_user_paths $HOME/.nodebrew/current/bin $fish_user_paths
-# set -U fish_user_paths $HOME/.nodebrew/current/lib/node_modules $fish_user_paths
-
 # Fish
+
+# Don't show the greeting message on fish boot.
 set -x fish_greeting ""
+# Don't let fish masquerade itself as other shells.
+set -x SHELL (which fish)
+# Help out programs spawning editors based on $EDITOR.
+set -x EDITOR nvim
+set -x BROWSER open
 
 # GPG
 set -x GPG_TTY (tty)
