@@ -10,7 +10,8 @@ all: \
 
 symlink:
 	ln -sf $(.)/.editorconfig $(HOME)/.editorconfig
-	ln -sf $(.)/.gitconfig $(.)/.gitignore
+	ln -sf $(.)/.gitconfig $(.)/.gitconfig
+	ln -sf $(.)/.gitignore $(.)/.gitignore
 	ln -sf $(.)/.tmux.conf $(HOME)/.tmux.conf
 	ln -sf $(.)/.vimrc $(HOME)/.vimrc
 	mkdir -p $(HOME)/.config/nvim
