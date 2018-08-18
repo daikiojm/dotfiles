@@ -1,1 +1,16 @@
-/Users/daikiojm/src/github.com/daikiojm/dotfiles/.gitconfig
+*__.*
+.DS_Store
+.env*
+.mono
+hub
+fishd.*
+fish_history
+local-config.fish
+fish_read_history
+configstore
+.idea
+*.iml
+.vscode
+npm-debug.*
+*.gem
+yarn-error.log
