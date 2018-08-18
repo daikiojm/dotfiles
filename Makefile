@@ -4,7 +4,6 @@
 
 all: \
 	symlink \
-	restore \
 	fish \
 	brew \
 	node \
