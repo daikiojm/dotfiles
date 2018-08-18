@@ -1,16 +1,9 @@
 #! /bin/sh
 
-echo "=== Install Fish Shell"
-
-brew install fish
-sudo sh -c "echo '/usr/local/bin/fish' >> /etc/shells"
-chsh -s /usr/local/bin/fish
-
-# fisherman (fish plugin manager)
-echo "=== Install Fisherman"
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-fisher
-fisher up
+echo "=== Install Homebrew"
+if !(type brew) &>/dev/null; then
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 echo "=== Install Homebrew packages"
 
@@ -20,7 +13,6 @@ brew install wget
 brew install git
 brew install git-flow
 brew install gibo
-brew install nodebrew
 brew install nodenv
 brew install gnupg
 brew install gpg-agent
