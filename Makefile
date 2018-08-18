@@ -10,9 +10,11 @@ all: \
 
 symlink:
 	ln -sf $(.)/.editorconfig $(HOME)/.editorconfig
-	ln -sf $(.)/.gitconfig $(.)/.gitignore $(HOME)
-	ln -sf $(.)/.tmux.conf $(HOME)
-	ln -sf $(.)/.vimrc $(HOME)
+	ln -sf $(.)/.gitconfig $(.)/.gitignore
+	ln -sf $(.)/.tmux.conf $(HOME)/.tmux.conf
+	ln -sf $(.)/.vimrc $(HOME)/.vimrc
+	mkdir -p $(HOME)/.config/nvim
+	ln -sf $(.)/.vimrc $(HOME)/.config/nvim/init.vim
 	ln -sf $(.)/.gnupg/gpg-agent.conf $(HOME)/.gnupg/gpg-agent.conf
 	ln -sf $(.)/.gnupg/gpg.conf $(HOME)/.gnupg/gpg.conf
 	ln -sf $(.)/.config/fish/config.fish $(HOME)/.config/fish/config.fish

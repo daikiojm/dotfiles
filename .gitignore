@@ -1,8 +1,1 @@
-.mono
-.DS_Store
-hub
-fishd.*
-fish_history
-local-config.fish
-fish_read_history
-configstore
+/Users/daikiojm/src/github.com/daikiojm/dotfiles/.gitconfig
