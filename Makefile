@@ -21,6 +21,11 @@ symlink:
 	ln -sf $(.)/.config/karabiner/karabiner.json $(HOME)/.config/karabiner/karabiner.json
 	[ -e $(HOME)/.config/powerline ] || ln -sf $(.)/.config/powerline $(HOME)/.config/powerline
 
+	# fish shell custom functions
+	ln -sf $(.)/.config/fish/functions/fish_user_key_bindings.fish $(HOME)/.config/fish/functions/fish_user_key_bindings.fish
+	ln -sf $(.)/.config/fish/functions/fco.fish $(HOME)/.config/fish/functions/fco.fish
+	ln -sf $(.)/.config/fish/functions/fcoc.fish $(HOME)/.config/fish/functions/fcoc.fish
+
 fish:
 	bash lib/fish.sh
 
