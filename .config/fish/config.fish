@@ -79,12 +79,3 @@ alias gh="hub browse"
 
 # start up mongoDB
 alias mongodb="sudo mongod --dbpath /var/lib/mongodb --logpath /var/log/mongodb.log"
-
-
-####################
-# Path
-####################
-
-function fco -d "Fuzzy-find and checkout a branch"
-  git branch --all | grep -v HEAD | string trim | fzf | read -l result; and git checkout "$result"
-end
