@@ -10,8 +10,8 @@ all: \
 
 symlink:
 	ln -sf $(.)/.editorconfig $(HOME)/.editorconfig
-	ln -sf $(.)/.gitconfig $(.)/.gitconfig
-	ln -sf $(.)/.gitignore $(.)/.gitignore
+	ln -sf $(.)/.gitconfig $(HOME)/.gitconfig
+	ln -sf $(.)/.gitignore $(HOME)/.gitignore
 	ln -sf $(.)/.tmux.conf $(HOME)/.tmux.conf
 	ln -sf $(.)/.vimrc $(HOME)/.vimrc
 	mkdir -p $(HOME)/.config/nvim
@@ -23,6 +23,8 @@ symlink:
 	[ -e $(HOME)/.config/karabiner/assets ] || ln -sf $(.)/.config/karabiner/assets $(HOME)/.config/karabiner/assets
 	ln -sf $(.)/.config/karabiner/karabiner.json $(HOME)/.config/karabiner/karabiner.json
 	[ -e $(HOME)/.config/powerline ] || ln -sf $(.)/.config/powerline $(HOME)/.config/powerline
+	ln -sf $(.)/.config/nvim/dein.toml $(HOME)/.config/nvim/dein.toml
+	ln -sf $(.)/.config/nvim/dein_lazy.toml $(HOME)/.config/nvim/dein_lazy.toml
 
 	# fish shell custom functions
 	ln -sf $(.)/.config/fish/functions/fish_user_key_bindings.fish $(HOME)/.config/fish/functions/fish_user_key_bindings.fish
