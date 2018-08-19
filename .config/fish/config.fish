@@ -38,8 +38,9 @@ alias brew="env PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
 # startup bash
 alias b="bash"
 
-# shortcut Documents
+# shortcut directory
 alias d="cd ~/Documents/"
+alias pj="cd-gitroot"
 
 # for docker command
 alias dc="docker-compose"
