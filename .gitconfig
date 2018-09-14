@@ -1,19 +1,19 @@
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [alias]
-	a       = add .
-	c       = checkout
+  a       = add .
+  c       = checkout
   cb      = !git checkout -b
   cc      = !git checkout-i
   ccb     = !git checkout-b-i
-	bd      = !git branch -d
-	bdf     = !git branch -D
-	bdi     = !git branch-d-i
-	df      = diff
-	tag     = tag -s
-	sh      = stash
-	sp      = stash pop
-	st      = status
+  bd      = !git branch -d
+  bdf     = !git branch -D
+  bdi     = !git branch-d-i
+  df      = diff
+  tag     = tag -s
+  sh      = stash
+  sp      = stash pop
+  st      = status
 
   branch-i     = !git branch -a | fzf | sed -e 's/\\*//g'
   checkout-i   = !git checkout $(git branch-i | sed -e 's|remotes/origin/||g')
@@ -23,11 +23,11 @@
   branch-d-i   = !git branch -D $(git branch-i | sed -e 's/\\*//g')
   rebase-i     = !git rebase -i $(git log --oneline | fzf | awk '{ print $1 }')^
 [ghq]
-	root = ~/src
+  root = ~/src
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [commit]
-	cleanup = strip
+  cleanup = strip
