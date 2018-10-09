@@ -40,6 +40,7 @@ alias b="bash"
 
 # shortcut directory
 alias d="cd ~/Documents/"
+alias en="cd ~/env/"
 alias pj="cd-gitroot"
 
 # for docker command
@@ -48,7 +49,7 @@ alias dcu="docker-compose up -d"
 alias dcd="docker-compose down"
 alias dp="docker ps"
 
-# exit command 
+# exit command
 alias e="exit"
 
 # for git command
