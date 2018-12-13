@@ -5,6 +5,9 @@
 # Node
 set -x PATH $PATH ~/.nodebrew/current/bin
 
+# Go tools
+set -x PATH $PATH ~/bin
+
 set -x LANG "ja_JP.UTF-8"
 
 # set -U NODE_PATH $HOME/.nodebrew/current/lib/node_modules
