@@ -5,6 +5,9 @@
 # Node
 set -x PATH $PATH ~/.nodebrew/current/bin
 
+# Go tools
+set -x PATH $PATH ~/bin
+
 set -x LANG "ja_JP.UTF-8"
 
 # Fish
@@ -26,6 +29,8 @@ set -x GPG_TTY (tty)
 # Go
 set -x GOPATH $HOME
 
+# Tex
+set -x PATH $PATH /Library/Tex/texbin
 
 ####################
 # alias
