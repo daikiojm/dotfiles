@@ -3,5 +3,9 @@
   {
     "key": "cmd+`",
     "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "cmd+5",
+    "command": "workbench.action.focusFirstEditorGroup"
   }
 ]
