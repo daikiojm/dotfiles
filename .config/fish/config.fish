@@ -23,8 +23,11 @@ set -x BROWSER open
 # GPG
 set -x GPG_TTY (tty)
 
-# Python
+# pyenv & Python
 . (pyenv init - | psub)
+set -x PYENV_ROOT $HOME/.pyenv
+set -x PATH $PYENV_ROOT/bin $PATH
+set -x PATH $PATH (python -m site --user-base)/bin
 
 # Go
 set -x GOPATH $HOME
