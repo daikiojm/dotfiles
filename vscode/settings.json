@@ -1,32 +1,52 @@
 {
-    "editor.renderWhitespace": "all",
-    "terminal.integrated.fontFamily": "Meslo LG L DZ for Powerline",
-    "window.zoomLevel": 0,
-    "vim.useSystemClipboard": true,
-    "editor.tabSize": 2, 
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.quickSuggestions": {
-        "strings": true
+  "editor.renderWhitespace": "all",
+  "terminal.integrated.fontFamily": "Meslo LG L DZ for Powerline",
+  "window.zoomLevel": 0,
+  "vim.useSystemClipboard": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "element-helper.version": "2.3",
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.minimap.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "xml": {
+      "attr_quotes": "single"
     },
-    "element-helper.version": "2.3",
-    "workbench.colorTheme": "One Dark Pro",
-    "editor.minimap.enabled": false,
-    "explorer.confirmDragAndDrop": false,
-    "emmet.syntaxProfiles": {
-        "javascript": "jsx",
-        "xml": {
-            "attr_quotes": "single"
-        },
-        "typescript": "css"
-    },
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "files.associations": {
-        "*.ts": "typescript"
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "cSpell.language": "en"
+    "typescript": "css"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "files.associations": {
+    "*.ts": "typescript"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "yaml.customTags": [
+    "!Ref",
+    "!Sub scalar",
+    "!Sub sequence",
+    "!Join sequence",
+    "!FindInMap sequence",
+    "!GetAtt scalar",
+    "!GetAtt sequence",
+    "!Base64 mapping",
+    "!GetAZs",
+    "!Select scalar",
+    "!Select sequence",
+    "!Split sequence",
+    "!ImportValue",
+    "!Condition",
+    "!Equals sequence",
+    "!And",
+    "!If",
+    "!Not",
+    "!Or"
+  ]
 }
