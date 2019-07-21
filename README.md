@@ -113,3 +113,21 @@ $ cp ./vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keyb
 $ cp ./vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json 
 $ ./vscode/installExtensions.sh
 ```
+
+## KeyRepeat
+
+Check current KeyRepeat setting.
+
+```
+$ defaults read -g InitialKeyRepeat
+$ defaults read -g KeyRepeat
+```
+
+Set custom KeyRepeat setting.
+
+```
+$ defaults write -g InitialKeyRepeat -int 11
+$ defaults write -g KeyRepeat -int 1
+```
+
+https://dev.classmethod.jp/tool/mac-keyboard-speed-2/
