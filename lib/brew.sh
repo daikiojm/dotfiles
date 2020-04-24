@@ -27,8 +27,7 @@ brew install caskroom/cask/brew-cask
 brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install alfred
-brew cask install dropbox
-brew cask install skitch
+brew cask install figma
 brew cask install visual-studio-code
 brew cask install slack
 brew cask install docker
