@@ -8,4 +8,4 @@ fi
 echo "=== Install Homebrew packages"
 
 xargs brew install < $(pwd)/brew.txt
-xargs brew cask install < $(pwd)/brew-cask.txt
+xargs brew install --cask < $(pwd)/brew-cask.txt
