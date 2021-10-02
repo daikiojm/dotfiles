@@ -1,0 +1,8 @@
+aws-vault
+docker
+figma
+google-japanese-ime
+visual-studio-code
+alfred
+slack
+docker

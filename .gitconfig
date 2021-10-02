@@ -37,5 +37,12 @@
   required = true
 [commit]
   cleanup = strip
+	gpgsign = true
 [core]
 	ignorecase = false
+[gpg]
+	program = gpg
+[rerere]
+	enabled = true
+[pull]
+	rebase = false

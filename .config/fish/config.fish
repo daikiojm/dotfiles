@@ -1,4 +1,9 @@
 ####################
+# shell
+####################
+set -g theme_date_format "+%Y-%m-%d %H:%M:%S"
+
+####################
 # Path
 ####################
 
@@ -7,6 +12,9 @@ set -x PATH $PATH ~/.nodebrew/current/bin
 
 # Go tools
 set -x PATH $PATH ~/bin
+
+# cli tools
+set -x PATH $PATH ~/.local/bin
 
 set -x LANG "ja_JP.UTF-8"
 
@@ -87,5 +95,7 @@ alias l="ls -al"
 # shortcut open GitHub
 alias gh="hub browse"
 
-# start up mongoDB
-alias mongodb="sudo mongod --dbpath /var/lib/mongodb --logpath /var/log/mongodb.log"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '~/google-cloud-sdk/path.fish.inc' ]; . '~/google-cloud-sdk/path.fish.inc'; end
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths

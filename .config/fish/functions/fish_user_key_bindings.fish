@@ -42,9 +42,9 @@ function fish_user_key_bindings
     end
     ### fzf ###
     ### ghq ###
-    bind \cg '__ghq_crtl_g'
+    bind \cg '__ghq_repository_search'
     if bind -M insert >/dev/null ^/dev/null
-        bind -M insert \cg '__ghq_crtl_g'
+        bind -M insert \cg '__ghq_repository_search'
     end
     ### ghq ###
     ### fco ###
