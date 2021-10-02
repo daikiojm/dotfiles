@@ -1,9 +1,10 @@
 #!/bin/sh
 
 echo "=== Install Nodebrew"
-brew install nodebrew
+brew install nodenv
+brew upgrade nodenv node-build
 
 echo "=== Install latest node"
-nodebrew install-binary latest
-nodebrew use latest
+nodenv install 14.17.5
+nodenv global 14.17.5
 node -v

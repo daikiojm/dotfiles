@@ -3,7 +3,7 @@
 Exec the following command.
 
 ```bash
-$ ./setup.sh
+$ make
 ```
 
 # SSH Key Gen & Register to GitHub
@@ -104,7 +104,7 @@ Download from https://pqrs.org/osx/karabiner and Install.
 
 ## Visual Studio Code 
 
-Backup extended package list.
+~~Backup extended package list.~~
 
 ```bash
 $ cp $HOME/Library/Application\ Support/Code/User/keybindings.json ./vscode/keybindings.json 
@@ -112,13 +112,15 @@ $ cp $HOME/Library/Application\ Support/Code/User/settings.json ./vscode/setting
 $ code --list-extensions > ./vscode/extensions
 ``` 
 
-Restoring extended package list.
+~~Restoring extended package list.~~
 
 ```bash
 $ cp ./vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
 $ cp ./vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json 
 $ ./vscode/installExtensions.sh
 ```
+
+Use [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync) instead.
 
 ## KeyRepeat
 
