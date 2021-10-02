@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -ex
+
 echo "=== Install Fish Shell"
 
 if !(type fish) &>/dev/null; then
@@ -8,10 +10,10 @@ if !(type fish) &>/dev/null; then
   chsh -s /usr/local/bin/fish
 fi
 
-# fisherman (fish plugin manager)
-echo "=== Install Fisherman"
+# fisher (fish plugin manager)
+echo "=== Install Fisher"
 if !(type fisher) &>/dev/null; then
-  curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
+  curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 fi
-fisher
-fisher up
+
+env fish -c "fisher update"

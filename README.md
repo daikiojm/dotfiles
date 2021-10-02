@@ -112,7 +112,7 @@ $ cd fonts
 $ ./install.sh
 ```
 
-and Set `Meslo LG S Regular for Powerline 13 pt.` into Terminal.app preferences.
+and Set `Source Code Pro for Powerline 13 pt.` into Terminal.app preferences.
 
 ## Karabiner
 
