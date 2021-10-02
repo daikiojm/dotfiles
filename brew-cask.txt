@@ -1,5 +1,4 @@
 aws-vault
-docker
 figma
 google-japanese-ime
 visual-studio-code
