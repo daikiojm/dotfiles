@@ -85,6 +85,13 @@ $ git config --global user.signingkey <ID>
 
 ## Terminal
 
+### Change Default Shell
+
+```bash
+$ echo /usr/local/bin/fish | sudo tee -a /etc/shells
+$ chsh -s /usr/local/bin/fish
+```
+
 ### Theme
 
 Download Solarized from GitHub.
