@@ -3,10 +3,16 @@
 . := $(PWD)
 
 all: \
+	setup
+
+setup: \
 	symlink \
 	fish \
 	brew \
 	node \
+
+backup: \
+	backup-brew \
 
 symlink:
 	ln -sf $(.)/.editorconfig $(HOME)/.editorconfig
@@ -45,3 +51,7 @@ backup-vscode-config:
 
 restore-vscode-config:
 	bash lib/restore-vscode-config.sh
+
+backup-brew:
+	brew leaves > brew.txt
+	brew list --cask -1 > brew-cask.txt

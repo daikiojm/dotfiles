@@ -1,5 +1,14 @@
 # Setup
 
+Clone this repository.
+
+```bash
+$ xcode-select --install
+$ cd
+$ git clone https://github.com/daikiojm/dotfiles.git
+cd dotfiles
+```
+
 Exec the following command.
 
 ```bash
