@@ -6,7 +6,7 @@ Clone this repository.
 $ xcode-select --install
 $ cd
 $ git clone https://github.com/daikiojm/dotfiles.git
-cd dotfiles
+$ cd dotfiles
 ```
 
 Exec the following command.
