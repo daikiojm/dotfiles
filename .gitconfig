@@ -1,26 +1,25 @@
 [credential]
   # for aws code commit
-  helper = !"/usr/local/bin/aws" codecommit credential-helper $@
-  UseHttpPath = true
+  helper       = !"/usr/local/bin/aws" codecommit credential-helper $@
+  UseHttpPath  = true
 [credential "https://github.com"]
-  helper = osxkeychain
+  helper       = osxkeychain
 [alias]
-  a       = add .
-  c       = checkout
-  cb      = !git checkout -b
-  cc      = !git checkout-i
-  ccb     = !git checkout-b-i
-  bd      = !git branch -d
-  bdf     = !git branch -D
-  bdi     = !git branch-d-i
-  poc     = !git push origin $(git symbolic-ref --short HEAD)
-  pocf    = !git poc -f
-  df      = diff
-  tag     = tag -s
-  sh      = stash
-  sp      = stash pop
-  st      = status
-
+  a            = add .
+  c            = checkout
+  cb           = !git checkout -b
+  cc           = !git checkout-i
+  ccb          = !git checkout-b-i
+  bd           = !git branch -d
+  bdf          = !git branch -D
+  bdi          = !git branch-d-i
+  poc          = !git push origin $(git symbolic-ref --short HEAD)
+  pocf         = !git poc -f
+  df           = diff
+  tag          = tag -s
+  sh           = stash
+  sp           = stash pop
+  st           = status
   branch-i     = !git branch -a | fzf | sed -e 's/\\*//g'
   checkout-i   = !git checkout $(git branch-i | sed -e 's|remotes/origin/||g')
   checkout-b-i = !git checkout -b $(git branch-i | sed -e 's|remotes/origin/||g')
@@ -29,20 +28,20 @@
   branch-d-i   = !git branch -D $(git branch-i | sed -e 's/\\*//g')
   rebase-i     = !git rebase -i $(git log --oneline | fzf | awk '{ print $1 }')^
 [ghq]
-  root = ~/src
+  root         = ~/src
 [filter "lfs"]
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  process = git-lfs filter-process
-  required = true
+  clean        = git-lfs clean -- %f
+  smudge       = git-lfs smudge -- %f
+  process      = git-lfs filter-process
+  required     = true
 [commit]
-  cleanup = strip
-	gpgsign = true
+  cleanup      = strip
+  gpgsign      = true
 [core]
-	ignorecase = false
+  ignorecase   = false
 [gpg]
-	program = gpg
+  program      = gpg
 [rerere]
-	enabled = true
+  enabled      = true
 [pull]
-	rebase = false
+  rebase       = false
