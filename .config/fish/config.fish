@@ -8,7 +8,7 @@ set -g theme_date_format "+%Y-%m-%d %H:%M:%S"
 ####################
 
 # Node
-set -x PATH $PATH ~/.nodebrew/current/bin
+eval (nodenv init - | source)
 
 # Go tools
 set -x PATH $PATH ~/bin

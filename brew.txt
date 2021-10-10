@@ -23,7 +23,6 @@ jq
 llvm
 luajit
 neovim
-nodebrew
 nodenv
 pinentry-mac
 postgresql
